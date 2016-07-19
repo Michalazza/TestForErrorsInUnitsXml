@@ -11,12 +11,14 @@ namespace TestForErrorsInUnitsXml
     {
         public List<XmlNode> CombiningXmlLinksData(string xmlCriteria, string xmlAssessment)
         {
+            //Create 2 documents from the 2 links
             var criteriaData = new XmlDocument();
             var assessmentData = new XmlDocument();
             criteriaData.Load(xmlCriteria);
             assessmentData.Load(xmlAssessment);
+            //Add both link data together
             criteriaData["AuthorIT"]["Objects"].InnerXml += assessmentData["AuthorIT"]["Objects"].InnerXml;
-
+            //Select the nodes I need
             var combinedData = criteriaData.GetElementsByTagName("Topic")
                 .Cast<XmlNode>()
                 .Where(x => x["Object"]["Description"].InnerText.Equals("Elements and Performance Criteria")
@@ -49,7 +51,7 @@ namespace TestForErrorsInUnitsXml
                     }
                     else
                     {
-                        //headingNodes.AppendChild(GetListData(textNodes, createDocument));
+                        headingNodes.AppendChild(GetListData(textNodes, createDocument));
                     }
 
                 }
@@ -59,40 +61,39 @@ namespace TestForErrorsInUnitsXml
             return createDocument;
         }
 
-        public XmlNode GetTableData(XmlNode textElement, XmlDocument xmlDocument)
+        public XmlNode GetTableData(XmlNode textElement, XmlDocument unitXmlDocument)
         {
-            XmlNode data = xmlDocument.CreateElement("Data");
+            XmlNode data = unitXmlDocument.CreateElement("Data");
 
             //Each Row
             foreach (XmlNode row in textElement)
             {
-
                 if (row != row.ParentNode.FirstChild && row != row.ParentNode.FirstChild.NextSibling)
                 {
-                    XmlNode element = xmlDocument.CreateElement("Elements");
+                    XmlNode element = unitXmlDocument.CreateElement("Element");
                     //Each Column                        
                     foreach (XmlNode column in row)
                     {
                         if (column.Name.Equals("td") && !column.InnerText.Equals(""))
                         {
                             //Create Element with its list
-                            XmlNode elementTopic = xmlDocument.CreateElement("ElementTopic");
-                            XmlNode criteriaList = xmlDocument.CreateElement("CriteriaList");
+                            XmlNode elementTopic = unitXmlDocument.CreateElement("ElementTopic");
+                            XmlNode criteriaList = unitXmlDocument.CreateElement("CriteriaList");
                             //Data Inside the Column
                             foreach (XmlNode dataInsideColumn in column)
                             {
                                 //Checks if its in the first column          
                                 if (column == column.ParentNode.FirstChild)
                                 {
-                                    elementTopic.InnerXml = column.InnerXml;
+                                    elementTopic.InnerXml = column.FirstChild.InnerXml;
                                     element.AppendChild(elementTopic);
                                 }
                                 //If not in first column gets all the data inside
                                 else
                                 {
-                                    XmlNode criterion = xmlDocument.CreateElement("Criterion");
-                                    XmlNode performanceCriterionNumber = xmlDocument.CreateElement("PerformanceCriterionNumber");
-                                    XmlNode performanceCriterion = xmlDocument.CreateElement("PerforamceCriterion");
+                                    XmlNode criterion = unitXmlDocument.CreateElement("Criterion");
+                                    XmlNode performanceCriterionNumber = unitXmlDocument.CreateElement("PerformanceCriterionNumber");
+                                    XmlNode performanceCriterion = unitXmlDocument.CreateElement("PerforamceCriterion");
 
                                     var split = dataInsideColumn.InnerXml.IndexOf(' ');
                                     performanceCriterionNumber.InnerXml = dataInsideColumn.InnerXml.Substring(0, split);
@@ -112,63 +113,122 @@ namespace TestForErrorsInUnitsXml
                     }
                     data.AppendChild(element);
                 }
-
             }
             return data;
         }
 
-        public XmlNode GetListData(XmlNode textXml, XmlDocument xmlDocument)
+        public XmlNode GetListData(XmlNode textXml, XmlDocument unitXmlDocument)
         {
-            XmlNode data = xmlDocument.CreateElement("Data");
-            var count = 0;
-            var id = "";
-            List<string> listId = new List<string>();
-            var previousId = "";
-            var lists = new List<XmlNode>();
-            //var listData = textXml.ChildNodes.Cast<XmlNode>().Where(p => !p.InnerText.Equals("") && !p.Attributes.GetNamedItem("id").Value.Equals("4")).ToList();
-            var listData = textXml.ChildNodes.Cast<XmlNode>().Where(p => !p.InnerText.Equals("")).ToList();
-            foreach (XmlNode textElement in listData)
+            //ICTNWK522
+            //ICTWHS204
+            //Set up Nodes
+            XmlNode data = unitXmlDocument.CreateElement("Data");
+            //Making heading node from first child
+            XmlNode heading = unitXmlDocument.CreateElement("Heading");
+            heading.InnerXml = textXml.FirstChild.InnerXml;
+            data.AppendChild(heading);
+            //Create a list of nodes excluding first entry and notes
+            List<XmlNode> listData = textXml.ChildNodes.Cast<XmlNode>().Where(p => !p.InnerXml.Equals("")
+                && !p.Attributes.GetNamedItem("id").Value.Equals("4")).ToList();
+            //Get notes
+            List<XmlNode> notes = textXml.ChildNodes.Cast<XmlNode>().Where(p =>
+                !p.InnerXml.Equals("")
+                && p.Attributes.GetNamedItem("id").Value.Equals("4")
+                && !p.Equals(p.ParentNode.FirstChild)).ToList();
+
+            //Make a list of ids so I can order them
+            List<string> listOfId = new List<string>();
+            foreach (var item in listData)
             {
-
-                XmlNode heading = xmlDocument.CreateElement("Heading");
-                if (textElement.Equals(textElement.ParentNode.FirstChild))
+                if (!listOfId.Contains(item.Attributes.GetNamedItem("id").Value))
                 {
-                    XmlNode list = xmlDocument.CreateElement("List");
-                    lists.Add(list);
-                    previousId = id;
-                    heading.InnerText = textElement.InnerText;
-                    XmlAttribute headingId = xmlDocument.CreateAttribute("id");
-                    //heading.Value = count.ToString();
-                    heading.Attributes.Append(headingId);
-                    id = textElement.Attributes.GetNamedItem("id").Value;
-                    lists[count].AppendChild(heading);
-                    listId.Add(id);
-
-                }
-                else if (textElement.Name.Equals("p") && !textElement.InnerText.Equals(""))
-                {
-                    if (!textElement.Attributes.GetNamedItem("id").Value.Equals(id) && !textElement.NextSibling.Attributes.GetNamedItem("id").Value.Equals(id))
-                    {
-                        count++;
-                        XmlNode list = xmlDocument.CreateElement("List");
-                        lists.Add(list);
-                        previousId = id;
-                        heading.InnerText = textElement.InnerText;
-                        XmlAttribute headingId = xmlDocument.CreateAttribute("id");
-                        heading.Value = count.ToString();
-                        heading.Attributes.Append(headingId);
-                        id = textElement.Attributes.GetNamedItem("id").Value;
-                        lists[count].AppendChild(heading);
-                    }
-                    else if (textElement.Attributes.GetNamedItem("id").Value.Equals("13"))
-                    {
-
-                    }
-
+                    listOfId.Add(item.Attributes.GetNamedItem("id").Value);
                 }
             }
-            return null;
-        }
+            //Set a Default heading
+            var currentHeading = "Default";
 
+            foreach (var item in listData)
+            {
+                //Create Node
+                XmlNode dataList = unitXmlDocument.CreateElement("ListData");
+                //Create Attributes
+                XmlAttribute id = unitXmlDocument.CreateAttribute("id");
+                XmlAttribute count = unitXmlDocument.CreateAttribute("count");
+                XmlAttribute listHeading = unitXmlDocument.CreateAttribute("Heading");
+                //Get the current Id
+                var currentId = item.Attributes.GetNamedItem("id").Value;
+                //Set previous Id and check if it can be something
+                var previousId = "";
+                if (item.PreviousSibling != null)
+                {
+                    previousId = item.PreviousSibling.Attributes.GetNamedItem("id").Value;
+                }
+                //Set value to id
+                id.Value = listOfId.IndexOf(currentId).ToString();
+                //goes through 
+                count.Value = listData.IndexOf(item).ToString();       
+                //Checks to see if there is another entry         
+                if (item.NextSibling != null
+                    && !item.NextSibling.Attributes.GetNamedItem("id").Equals("4"))
+                {
+                    //Checks to see if the next child is of not the same id and is of greater value
+                    var nextId = item.NextSibling.Attributes.GetNamedItem("id").Value;
+                    if (!currentId.Equals(nextId)
+                        && listOfId.IndexOf(currentId) < listOfId.IndexOf(nextId))
+                    {
+                        //Creates new heading
+                        listHeading.Value = currentHeading;
+                        currentHeading = count.Value;                       
+                    }
+                    else
+                    {
+                        //Current heading
+                        listHeading.Value = currentHeading;                                                
+                    }
+                }
+                //If last element
+                else
+                {
+                    listHeading.Value = currentHeading;
+                }
+                //Checks to see previous child is of greater value and then add to previous heading
+                if (!currentId.Equals("13") && listOfId.IndexOf(currentId) < listOfId.IndexOf(previousId))
+                {
+                    var something = false;
+                    for (int index = (listData.IndexOf(item) - 1); something == false; index--)
+                    {
+                        var checkHeading = listData[index].Attributes.GetNamedItem("id").Value;
+                        if (listOfId.IndexOf(currentId) > listOfId.IndexOf(checkHeading))
+                        {
+                            something = true;
+                            listHeading.Value = index.ToString();
+                            currentHeading = index.ToString();
+                        }
+                    }
+                }
+                //And if its the main id then just Default
+                if (currentId.Equals("13"))
+                {
+                    listHeading.Value = "Default";
+                }                
+                dataList.InnerXml = item.InnerXml;
+                //Add attributes to item
+                dataList.Attributes.Append(listHeading);
+                dataList.Attributes.Append(id);
+                dataList.Attributes.Append(count);
+                //Add item to list
+                data.AppendChild(dataList);
+            }
+
+            foreach (var item in notes)
+            {
+                XmlNode note = unitXmlDocument.CreateElement("Note");
+                note.InnerXml = item.InnerXml;
+                data.AppendChild(note);
+            }
+
+            return data;
+        }
     }
 }

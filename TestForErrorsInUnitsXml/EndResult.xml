@@ -1,0 +1,316 @@
+﻿<Matrix>
+  <ElementsandPerformanceCriteria>
+    <Data>
+      <Element>
+        <ElementTopic>1 Identify work health and safety (WHS) legislative requirements </ElementTopic>
+        <CriteriaList>
+          <Criterion>
+            <PerformanceCriterionNumber>1.1</PerformanceCriterionNumber>
+            <PerforamceCriterion> Locate WHS legislative requirements relevant to own work, role and responsibilities </PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>1.2</PerformanceCriterionNumber>
+            <PerforamceCriterion> Explain own responsibilities in relation to duty of care</PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>1.3</PerformanceCriterionNumber>
+            <PerforamceCriterion> Identify the relationship between legislative requirements and safe work practices  </PerforamceCriterion>
+          </Criterion>
+        </CriteriaList>
+      </Element>
+      <Element>
+        <ElementTopic>2 Identify construction hazards and control measures</ElementTopic>
+        <CriteriaList>
+          <Criterion>
+            <PerformanceCriterionNumber>2.1</PerformanceCriterionNumber>
+            <PerforamceCriterion> Identify basic principles of risk management </PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>2.2</PerformanceCriterionNumber>
+            <PerforamceCriterion> Identify common construction hazards </PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>2.3</PerformanceCriterionNumber>
+            <PerforamceCriterion> Identify measures for controlling hazards and risks</PerforamceCriterion>
+          </Criterion>
+        </CriteriaList>
+      </Element>
+      <Element>
+        <ElementTopic>3 Follow workplace procedures for hazard identification and risk control</ElementTopic>
+        <CriteriaList>
+          <Criterion>
+            <PerformanceCriterionNumber>3.1</PerformanceCriterionNumber>
+            <PerforamceCriterion> Recognise and report hazards in work area to designated personnel according to workplace procedures</PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>3.2</PerformanceCriterionNumber>
+            <PerforamceCriterion> Follow WHS legislative requirements, workplace procedures and work instructions to control risks</PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>3.3</PerformanceCriterionNumber>
+            <PerforamceCriterion> Comply with safe work practices </PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>3.4</PerformanceCriterionNumber>
+            <PerforamceCriterion> Implement duty of care requirements </PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>3.5</PerformanceCriterionNumber>
+            <PerforamceCriterion> Complete job safety analysis (JSA) sheets or safe work method statement (SWMS) according to work requirements, including hazard identification and risk assessment</PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>3.6</PerformanceCriterionNumber>
+            <PerforamceCriterion> Use and complete checks of personal protective equipment according to work requirements </PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>3.7</PerformanceCriterionNumber>
+            <PerforamceCriterion> Assess and test for harmful gases associated with workplace</PerforamceCriterion>
+          </Criterion>
+        </CriteriaList>
+      </Element>
+      <Element>
+        <ElementTopic>4 Follow safety requirements for working with optical fibre equipment</ElementTopic>
+        <CriteriaList>
+          <Criterion>
+            <PerformanceCriterionNumber>4.1</PerformanceCriterionNumber>
+            <PerforamceCriterion> Identify and use safe work practices when handling optical fibre, lasers and optical connectors according to the relevant Australian Standards</PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>4.2</PerformanceCriterionNumber>
+            <PerforamceCriterion> Identify and use safe working practices when handling and disposing of chemical waste </PerforamceCriterion>
+          </Criterion>
+        </CriteriaList>
+      </Element>
+      <Element>
+        <ElementTopic>5 Identify and implement WHS communication and reporting processes</ElementTopic>
+        <CriteriaList>
+          <Criterion>
+            <PerformanceCriterionNumber>5.1</PerformanceCriterionNumber>
+            <PerforamceCriterion> Apply WHS communication processes, information and documentation </PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>5.2</PerformanceCriterionNumber>
+            <PerforamceCriterion> Identify designated WHS personnel</PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>5.3</PerformanceCriterionNumber>
+            <PerforamceCriterion> Comply with safety signs and symbols </PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>5.4</PerformanceCriterionNumber>
+            <PerforamceCriterion> Identify procedures and relevant authorities for reporting emergencies, incidents and injuries </PerforamceCriterion>
+          </Criterion>
+        </CriteriaList>
+      </Element>
+      <Element>
+        <ElementTopic>6 Follow WHS incident response procedures</ElementTopic>
+        <CriteriaList>
+          <Criterion>
+            <PerformanceCriterionNumber>6.1</PerformanceCriterionNumber>
+            <PerforamceCriterion> Follow general procedures for responding to incidents and emergencies </PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>6.2</PerformanceCriterionNumber>
+            <PerforamceCriterion> Identify procedures for accessing first aid </PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>6.3</PerformanceCriterionNumber>
+            <PerforamceCriterion> Select and use relevant personal protective equipment </PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>6.4</PerformanceCriterionNumber>
+            <PerforamceCriterion> Explain and apply workplace procedures for fire safety</PerforamceCriterion>
+          </Criterion>
+        </CriteriaList>
+      </Element>
+      <Element>
+        <ElementTopic>7 Contribute to management of WHS</ElementTopic>
+        <CriteriaList>
+          <Criterion>
+            <PerformanceCriterionNumber>7.1</PerformanceCriterionNumber>
+            <PerforamceCriterion> Raise WHS issues with designated personnel according to workplace procedures and relevant WHS legislation</PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>7.2</PerformanceCriterionNumber>
+            <PerforamceCriterion> Contribute to participative arrangements for WHS management in workplace, within organisational procedures and scope of responsibilities and competencies</PerforamceCriterion>
+          </Criterion>
+        </CriteriaList>
+      </Element>
+      <Element>
+        <ElementTopic>8 Contribute to management of workplace environmental issues</ElementTopic>
+        <CriteriaList>
+          <Criterion>
+            <PerformanceCriterionNumber>8.1</PerformanceCriterionNumber>
+            <PerforamceCriterion> Raise environmental issues with designated personnel according to workplace procedures and relevant environmental requirements and legislation</PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>8.2</PerformanceCriterionNumber>
+            <PerforamceCriterion> Contribute to participative arrangements for environmental management in workplace, within organisational procedures and scope of responsibilities and competencies</PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>8.3</PerformanceCriterionNumber>
+            <PerforamceCriterion> Record and report all WHS issues, risks and hazards to designated personnel</PerforamceCriterion>
+          </Criterion>
+        </CriteriaList>
+      </Element>
+      <Element>
+        <ElementTopic>9 Identify and respond appropriately to asbestos containing materials (ACM) hazards</ElementTopic>
+        <CriteriaList>
+          <Criterion>
+            <PerformanceCriterionNumber>9.1</PerformanceCriterionNumber>
+            <PerforamceCriterion> Identify asbestos containing materials (ACM) hazards or their likelihood</PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>9.2</PerformanceCriterionNumber>
+            <PerforamceCriterion> Respond to asbestos containing materials hazards or their likelihood</PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>9.3</PerformanceCriterionNumber>
+            <PerforamceCriterion> Report identified or suspected asbestos containing materials hazards to designated personnel according to workplace procedures</PerforamceCriterion>
+          </Criterion>
+        </CriteriaList>
+      </Element>
+      <Element>
+        <ElementTopic>10 Identify minor traffic management </ElementTopic>
+        <CriteriaList>
+          <Criterion>
+            <PerformanceCriterionNumber>9.1</PerformanceCriterionNumber>
+            <PerforamceCriterion> Assess traffic safety requirement of general location with respect to regulatory and enterprise requirements</PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>9.2</PerformanceCriterionNumber>
+            <PerforamceCriterion> Identify safe work zone around vehicle and work space using traffic cones and signs according to regulatory requirements </PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>9.3</PerformanceCriterionNumber>
+            <PerforamceCriterion> Identify changed traffic conditions and act in accordance</PerforamceCriterion>
+          </Criterion>
+        </CriteriaList>
+      </Element>
+      <Element>
+        <ElementTopic>11 Recognise and respond appropriately to confined space</ElementTopic>
+        <CriteriaList>
+          <Criterion>
+            <PerformanceCriterionNumber>10.1</PerformanceCriterionNumber>
+            <PerforamceCriterion> Identify confined space in accordance with regulatory or enterprise guidelines that can only be entered by personnel with specialist training</PerforamceCriterion>
+          </Criterion>
+          <Criterion>
+            <PerformanceCriterionNumber>10.2</PerformanceCriterionNumber>
+            <PerforamceCriterion> Refer identified confined space to appropriate personnel </PerforamceCriterion>
+          </Criterion>
+        </CriteriaList>
+      </Element>
+    </Data>
+  </ElementsandPerformanceCriteria>
+  <PerformanceEvidence>
+    <Data>
+      <Heading>Evidence of the ability to:</Heading>
+      <ListData Heading="Default" id="0" count="0">identify and apply the work health and safety (WHS) legislative and safety requirements for construction work</ListData>
+      <ListData Heading="Default" id="0" count="1">identify the range of common construction hazards and procedures for the assessment of risk and application of the hierarchy of control</ListData>
+      <ListData Heading="Default" id="0" count="2">apply WHS communication processes, information and documentation </ListData>
+      <ListData Heading="Default" id="0" count="3">contribute to the WHS committees and support representatives </ListData>
+      <ListData Heading="Default" id="0" count="4">recognise the common safety signs and symbols</ListData>
+      <ListData Heading="Default" id="0" count="5">identify and apply procedures for reporting hazards, incidents and injuries</ListData>
+      <ListData Heading="Default" id="0" count="6">identify and apply the general procedures for responding to incidents and emergencies, including evacuation, first aid, fire safety equipment and personal protective equipment</ListData>
+      <ListData Heading="Default" id="0" count="7">recognise and report hazards to designated personnel</ListData>
+      <ListData Heading="Default" id="0" count="8">follow workplace procedures necessary to control risks in the workplace </ListData>
+      <ListData Heading="Default" id="0" count="9">recognise the safe handling procedures for optical fibres and laser sources.</ListData>
+      <Note>Note: If a specific volume or frequency is not stated, then evidence must be provided at least once.</Note>
+    </Data>
+  </PerformanceEvidence>
+  <KnowledgeEvidence>
+    <Data>
+      <Heading>To complete the unit requirements safely and effectively, the individual must:</Heading>
+      <ListData Heading="Default" id="0" count="0">describe the relevant Commonwealth, state and territory WHS legislation, regulations, codes of practice, and industry standards and guidance notes relevant to own workplace, role and responsibilities</ListData>
+      <ListData Heading="Default" id="0" count="1">describe the differences between Commonwealth, state and territory WHS legislation and regulations </ListData>
+      <ListData Heading="Default" id="0" count="2">identify and describe the common construction hazards</ListData>
+      <ListData Heading="Default" id="0" count="3">identify different types of asbestos containing materials (ACM) (via photographs) and common sources of asbestos containing materials (ACM) found in the work environment and describe the controls required to mitigate risk</ListData>
+      <ListData Heading="Default" id="0" count="4">identify the general construction work activities that require licences, tickets or certificates of competency</ListData>
+      <ListData Heading="Default" id="0" count="5">identify and discuss the information and documentation used to maintain and inform on safe work practices</ListData>
+      <ListData Heading="Default" id="0" count="6">explain the purpose of environmental control processes for the following:</ListData>
+      <ListData Heading="6" id="1" count="7">air quality management</ListData>
+      <ListData Heading="6" id="1" count="8">disposal and handling of hazardous and dangerous substances</ListData>
+      <ListData Heading="6" id="1" count="9">noise pollution</ListData>
+      <ListData Heading="6" id="1" count="10">safe disposal of fibre offcuts</ListData>
+      <ListData Heading="6" id="1" count="11">stormwater and materials spillage</ListData>
+      <ListData Heading="6" id="1" count="12">waste disposal</ListData>
+      <ListData Heading="Default" id="0" count="13">describe the WHS responsibilities and rights of duty holders and workplace parties under environmental and WHS legislation, regulations and codes of practice, including:</ListData>
+      <ListData Heading="13" id="1" count="14">persons in control of construction work and/or projects</ListData>
+      <ListData Heading="13" id="1" count="15">employers and self-employed persons</ListData>
+      <ListData Heading="13" id="1" count="16">persons in control of a business or undertaking (PCBU) and officers </ListData>
+      <ListData Heading="13" id="1" count="17">supervisors</ListData>
+      <ListData Heading="13" id="1" count="18">employees and workers</ListData>
+      <ListData Heading="13" id="1" count="19">designers</ListData>
+      <ListData Heading="13" id="1" count="20">inspectors</ListData>
+      <ListData Heading="13" id="1" count="21">manufacturers and suppliers</ListData>
+      <ListData Heading="Default" id="0" count="22">describe how individuals engage and participate in WHS activities in the workplace</ListData>
+      <ListData Heading="Default" id="0" count="23">list the safety implications of working with optical fibres and equipment including:</ListData>
+      <ListData Heading="23" id="1" count="24">hazards relating to handling of optical fibre and laser light source in the workplace </ListData>
+      <ListData Heading="23" id="1" count="25">injuries that may occur:</ListData>
+      <ListData Heading="25" id="2" count="26">damage to retina from lasers</ListData>
+      <ListData Heading="25" id="2" count="27">damage to lungs from inhalation of fibre offcuts and particles</ListData>
+      <ListData Heading="25" id="2" count="28">needle stick injury from fibres and offcuts</ListData>
+      <ListData Heading="23" id="1" count="29">laser warning signs and labels relating to optical fibre components and equipment</ListData>
+      <ListData Heading="23" id="1" count="30">safety requirements when handling and working with:</ListData>
+      <ListData Heading="30" id="2" count="31">devices</ListData>
+      <ListData Heading="30" id="2" count="32">laser light sources</ListData>
+      <ListData Heading="30" id="2" count="33">optical fibre connectors</ListData>
+      <ListData Heading="30" id="2" count="34">optical fibres</ListData>
+      <ListData Heading="30" id="2" count="35">patchcords</ListData>
+      <ListData Heading="Default" id="0" count="36">state the personal responsibilities in complying with safe work practices including those relating to:</ListData>
+      <ListData Heading="36" id="1" count="37">housekeeping</ListData>
+      <ListData Heading="36" id="1" count="38">identification of hazards</ListData>
+      <ListData Heading="36" id="1" count="39">preventing bullying or harassment</ListData>
+      <ListData Heading="36" id="1" count="40">smoking</ListData>
+      <ListData Heading="36" id="1" count="41">use of amenities</ListData>
+      <ListData Heading="36" id="1" count="42">use of drugs and alcohol</ListData>
+      <ListData Heading="Default" id="0" count="43">discuss the principles of risk management (including hazard identification, risk assessment and control) for construction work</ListData>
+      <ListData Heading="Default" id="0" count="44">state ways in which WHS is managed in the workplace, and activities required under WHS legislation including:</ListData>
+      <ListData Heading="44" id="1" count="45">hazard identification </ListData>
+      <ListData Heading="44" id="1" count="46">hazards that exist in the workplace</ListData>
+      <ListData Heading="44" id="1" count="47">WHS instruction</ListData>
+      <ListData Heading="44" id="1" count="48">preferred order of ways to control risks (known as the hierarchy of control)</ListData>
+      <ListData Heading="44" id="1" count="49">risk assessment and controls</ListData>
+      <ListData Heading="44" id="1" count="50">role of WHS committees and representatives</ListData>
+      <ListData Heading="44" id="1" count="51">training and provision of WHS information</ListData>
+      <ListData Heading="44" id="1" count="52">types of common personal protective equipment and fire safety equipment</ListData>
+      <ListData Heading="44" id="1" count="53">types of WHS information and documentation </ListData>
+      <ListData Heading="Default" id="0" count="54">describe the workplace environmental and WHS procedures relevant to various types of work being undertaken, including procedures for: </ListData>
+      <ListData Heading="54" id="1" count="55">designated personnel responsible for WHS</ListData>
+      <ListData Heading="54" id="1" count="56">employee and worker participation in WHS management</ListData>
+      <ListData Heading="54" id="1" count="57">general first aid response requirements</ListData>
+      <ListData Heading="54" id="1" count="58">general workers compensation and injury management</ListData>
+      <ListData Heading="Default" id="0" count="59">describe the procedure for recognising, reporting and responding to WHS for:</ListData>
+      <ListData Heading="59" id="1" count="60">accidents</ListData>
+      <ListData Heading="59" id="1" count="61">dangerous occurrences</ListData>
+      <ListData Heading="59" id="1" count="62">emergencies </ListData>
+      <ListData Heading="59" id="1" count="63">hazards </ListData>
+      <ListData Heading="59" id="1" count="64">incidents </ListData>
+      <ListData Heading="59" id="1" count="65">injuries </ListData>
+      <ListData Heading="59" id="1" count="66">fires</ListData>
+      <ListData Heading="59" id="1" count="67">near misses </ListData>
+      <ListData Heading="59" id="1" count="68">evacuation procedures</ListData>
+      <ListData Heading="Default" id="0" count="69">identify and describe the function of WHS communications processes within an organisation</ListData>
+      <ListData Heading="Default" id="0" count="70">discuss the purpose and process for completing job safety analysis or safe work method statements</ListData>
+      <ListData Heading="Default" id="0" count="71">describe the meaning of WHS symbols found on signs and labels in the workplace</ListData>
+      <ListData Heading="Default" id="0" count="72">describe the work operations to control risks</ListData>
+      <ListData Heading="Default" id="0" count="73">explain the process of traffic control for a single vehicle</ListData>
+      <ListData Heading="Default" id="0" count="74">describe the risks associated with confined spaces and harmful gasses, and explain the appropriate responses.</ListData>
+    </Data>
+  </KnowledgeEvidence>
+  <AssessmentConditions>
+    <Data>
+      <Heading>Gather evidence to demonstrate consistent performance in conditions that are safe and replicate the workplace. Noise levels, production flow, interruptions and time variances should be typical of those experienced in the telecommunications – work health and safety field of work and include access to:</Heading>
+      <ListData Heading="Default" id="0" count="0">relevant WHS legislation, regulations and codes of practice</ListData>
+      <ListData Heading="Default" id="0" count="1">WHS implementation resources, such as sample forms, signs and procedures </ListData>
+      <ListData Heading="Default" id="0" count="2">enterprise WHS policies and procedures</ListData>
+      <ListData Heading="Default" id="0" count="3">personal protective equipment</ListData>
+      <ListData Heading="Default" id="0" count="4">first aid equipment </ListData>
+      <ListData Heading="Default" id="0" count="5">fire safety equipment</ListData>
+      <ListData Heading="Default" id="0" count="6">relevant work areas for identification of hazards and control measures</ListData>
+      <ListData Heading="Default" id="0" count="7">optic fibre cabling and equipment.</ListData>
+      <Note>Note: Work functions in the occupational areas where this unit may be used are subject to regulatory requirements.  Assessors of this unit must satisfy the requirements for assessors in applicable vocational education and training legislation, frameworks and/or standards.</Note>
+      <Note>Refer to the ICT Implementation Guide Companion Volume for recommended assessor details.</Note>
+    </Data>
+  </AssessmentConditions>
+</Matrix>

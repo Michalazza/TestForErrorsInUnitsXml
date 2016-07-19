@@ -13,6 +13,7 @@ namespace TestForErrorsInUnitsXml
     {
         static void Main(string[] args)
         {
+            //
             XmlReaderAndWriter tester = new XmlReaderAndWriter();
             Console.WriteLine("1.Check All");
             Console.WriteLine("2.Check by packaging");
@@ -94,8 +95,8 @@ namespace TestForErrorsInUnitsXml
                 var listOfUnitPackages = new List<string>();
                 
                 
-                string[] packages = { "ICT", "SIRX" };
-                string[] unitPackages = { "WHS", "NWK", "ICT", "PRG", "PMG" };
+                string[] packages = { "ICT" };
+                string[] unitPackages = { "WHS", "NWK", "ICT", "PRG", "PMG", "BWN" };
                 for (var count = 0; count < packages.Length; count++)
                 {
                     listOfPackages.Add(packages[count]);
@@ -185,6 +186,7 @@ namespace TestForErrorsInUnitsXml
                     {
                         var XmlData = tester.AddXmlDataToUnit(linkOne, linkTwo);
                         Console.Write("-Valid");
+                        writetext.Write(XmlData.InnerXml);
                     }
                     catch (XmlException ex)
                     {
