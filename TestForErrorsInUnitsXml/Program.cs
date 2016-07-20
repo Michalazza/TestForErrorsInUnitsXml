@@ -18,6 +18,7 @@ namespace TestForErrorsInUnitsXml
             Console.WriteLine("1.Check All");
             Console.WriteLine("2.Check by packaging");
             Console.WriteLine("3.Check Individual");
+            Console.WriteLine("4.Display Information");
             var errorCount = 0;
             StreamWriter writetext = new StreamWriter("write.txt");
             int x = int.Parse(Console.ReadLine());
@@ -39,12 +40,12 @@ namespace TestForErrorsInUnitsXml
                                         for (int count = 0; count < 1000; count++)
                                         {
                                             var ifValidSite = true;
-                                            string countNumber ="";
-                                            if(count < 10)
+                                            string countNumber = "";
+                                            if (count < 10)
                                             {
                                                 countNumber = "00" + count.ToString();
                                             }
-                                            else if(count < 100)
+                                            else if (count < 100)
                                             {
                                                 countNumber = "0" + count.ToString();
                                             }
@@ -90,11 +91,11 @@ namespace TestForErrorsInUnitsXml
                 Console.ReadKey();
             }
             else if (x == 2)
-            {                
+            {
                 var listOfPackages = new List<string>();
                 var listOfUnitPackages = new List<string>();
-                
-                
+
+
                 string[] packages = { "ICT" };
                 string[] unitPackages = { "WHS", "NWK", "ICT", "PRG", "PMG", "BWN" };
                 for (var count = 0; count < packages.Length; count++)
@@ -146,7 +147,8 @@ namespace TestForErrorsInUnitsXml
                                 try
                                 {
                                     var XmlData = tester.AddXmlDataToUnit(linkOne, linkTwo);
-                                    Console.Write("-Valid");                
+                                    Console.Write("-Valid");
+                                    writetext.WriteLine(builder);
                                 }
                                 catch (XmlException ex)
                                 {
@@ -163,7 +165,7 @@ namespace TestForErrorsInUnitsXml
                 writetext.Close();
                 Console.ReadKey();
             }
-            else if(x == 3)
+            else if (x == 3)
             {
                 var ifValidSite = true;
                 string builder = Console.ReadLine();
@@ -198,10 +200,28 @@ namespace TestForErrorsInUnitsXml
                 Console.WriteLine();
                 writetext.Close();
             }
+            else if (x == 4)
+            {
+                var XmlData = new XmlDocument();
+                var evidence = new EvidenceMatrixDocument();
+                string linkOne = "http://training.gov.au/TrainingComponentFiles/ICT/ICTWHS204_R1.xml";
+                string linkTwo = "http://training.gov.au/TrainingComponentFiles/ICT/ICTWHS204_AssessmentRequirements_R1.xml";
+                try
+                {
+                    XmlData = tester.AddXmlDataToUnit(linkOne, linkTwo);
+                }
+                catch (XmlException ex)
+                {
+                }
+                var model = new EvidenceMatrixDocument();
+                evidence.getDataFromXml(XmlData);
+                //ICTWHS204
+                //ICTNWK522
+            }
             else
             {
                 writetext.Close();
             }
-        }        
+        }
     }
 }

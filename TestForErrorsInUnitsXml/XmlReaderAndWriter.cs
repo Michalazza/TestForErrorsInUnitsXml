@@ -119,8 +119,6 @@ namespace TestForErrorsInUnitsXml
 
         public XmlNode GetListData(XmlNode textXml, XmlDocument unitXmlDocument)
         {
-            //ICTNWK522
-            //ICTWHS204
             //Set up Nodes
             XmlNode data = unitXmlDocument.CreateElement("Data");
             //Making heading node from first child
